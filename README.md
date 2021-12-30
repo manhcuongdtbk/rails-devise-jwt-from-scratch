@@ -14,6 +14,10 @@ curl -v --data "user[email]=admin@example.com&user[password]=123456" http://loca
 
 Use the token value for later requests
 
+### Web UI
+
+http://localhost:3000/
+
 ## Get the current weather information for a location
 
 You must sign in to get the information.
