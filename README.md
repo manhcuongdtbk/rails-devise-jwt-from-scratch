@@ -27,3 +27,17 @@ For example, I have a location with id 1.
 ```shell
 curl -v -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTY0MDg3NTI5MX0.bCeq-ow4O2k-sq36hrRN0WH7QuxAtSWMP2xfzycrcsI" http://localhost:3000/api/v1/locations/1.json
 ```
+
+## Get all weather information for a location
+
+You must sign in to get the information.
+
+You can use a location id from the seed data or create it yourself.
+
+For example, I have a location with id 1.
+
+### CURL
+
+```shell
+curl -v -H "Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImV4cCI6MTYzOTQ2MDE2Nn0.bHPKLYnmeRuYik6cewyt3Sir8SBs1rBtdwijpyfISkw" http://localhost:3000/api/v1/locations/1/recordings
+```

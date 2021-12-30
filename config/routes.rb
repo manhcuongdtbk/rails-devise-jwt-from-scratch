@@ -6,8 +6,8 @@ Rails.application.routes.draw do
       defaults format: :json do
         post :auth, to: 'authentication#create'
 
-        resources :locations do
-          resources :recordings
+        resources :locations, only: [:show] do
+          resources :recordings, only: [:index]
         end
       end
     end
